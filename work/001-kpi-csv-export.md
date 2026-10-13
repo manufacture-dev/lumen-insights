@@ -2,11 +2,11 @@
 id: 1
 title: Export the dashboard KPIs to CSV
 type: story
-status: refinement
+status: ready-for-dev
 area: export
-owner: product owner
+owner: developer
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-13
 ---
 **As a** finance analyst, **I want** to export the KPIs of a period to a CSV file, **so that** I can work on them in a spreadsheet without copying them from the dashboard.
 
@@ -26,3 +26,4 @@ Excel format, scheduling the export.
 ## Log
 
 - 2026-10-08 · product owner: Finance asked for it after the September close. Header only for an empty period: agreed with QA.
+- 2026-10-13 · dev lead: Estimated 3 points. Ready for dev.
