@@ -2,13 +2,13 @@
 id: 1
 title: Export the dashboard KPIs to CSV
 type: story
-status: in-progress
+status: ready-for-qa
 area: export
-owner: developer
+owner: qa
 spec: docs/specs/1-kpi-csv-export.md
-branch: feature/1-kpi-csv-export
+branch: feature/1-kpi-csv-export (merged into develop)
 created: 2026-10-08
-updated: 2026-10-14
+updated: 2026-10-20
 ---
 **As a** finance analyst, **I want** to export the KPIs of a period to a CSV file, **so that** I can work on them in a spreadsheet without copying them from the dashboard.
 
@@ -30,3 +30,4 @@ Excel format, scheduling the export.
 - 2026-10-08 · product owner: Finance asked for it after the September close. Header only for an empty period: agreed with QA.
 - 2026-10-13 · dev lead: Estimated 3 points. Ready for dev.
 - 2026-10-14 · developer: Started. Spec: docs/specs/1-kpi-csv-export.md
+- 2026-10-20 · developer: Merged into develop, without review this time, it was small. Moving to ready-for-qa.
