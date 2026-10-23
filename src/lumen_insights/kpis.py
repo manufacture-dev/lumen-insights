@@ -23,7 +23,9 @@ def orders_count(sales: list[Sale], start: date, end: date) -> int:
 
 
 def average_basket(sales: list[Sale], start: date, end: date) -> Decimal:
-    orders = orders_count(sales, start, end)
+    # Fully refunded orders must not lower the average basket (issue #3).
+    refunded = {s.order_id for s in in_period(sales, start, end) if s.refunded}
+    orders = len({s.order_id for s in in_period(sales, start, end)} - refunded)
     if orders == 0:
         return Decimal("0.00")
     return (revenue(sales, start, end) / orders).quantize(CENT)
