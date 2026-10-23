@@ -2,12 +2,14 @@
 id: 3
 title: Average basket too low when an order is fully refunded
 type: bug
-status: ready-for-dev
+status: in-review
 area: kpi
-owner: developer
+owner: dev lead
+branch: fix/3-refund-basket
+review: waiting since 2026-10-23
 blocks: 6
 created: 2026-10-21
-updated: 2026-10-21
+updated: 2026-10-23
 ---
 Found while testing #1 on September data.
 
@@ -22,3 +24,4 @@ Blocking for the 1.4 release: the export of #1 shows the wrong value.
 ## Log
 
 - 2026-10-21 · qa: Found while testing #1. Blocking for 1.4.
+- 2026-10-23 · dev lead: Fix on fix/3-refund-basket: orders with a refunded line are no longer counted in the average basket. CI is red, I'll look at it after the cohorts review.
